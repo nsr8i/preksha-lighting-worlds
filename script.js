@@ -15,20 +15,19 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     const message = document.getElementById("message").value.trim();
 
     // YOUR WHATSAPP NUMBER
-    // Replace XXXXXXXXXX with your real WhatsApp number later.
-    const whatsappNumber = "91XXXXXXXXXX";
+    const whatsappNumber = "919087434731";
 
     const whatsappMessage =
-        "Hello PREKSHA LIGHTING WORLD,%0A%0A" +
-        "I would like to make a lighting enquiry.%0A%0A" +
-        "Name: " + encodeURIComponent(name) + "%0A" +
-        "Phone: " + encodeURIComponent(phone) + "%0A" +
-        "Email: " + encodeURIComponent(email) + "%0A" +
-        "Requirement: " + encodeURIComponent(message);
+        "Hello PREKSHA LIGHTING WORLD,\n\n" +
+        "I would like to make a lighting enquiry.\n\n" +
+        "Name: " + name + "\n" +
+        "Phone: " + phone + "\n" +
+        "Email: " + email + "\n" +
+        "Requirement: " + message;
 
     const whatsappURL =
         "https://wa.me/" + whatsappNumber +
-        "?text=" + whatsappMessage;
+        "?text=" + encodeURIComponent(whatsappMessage);
 
     window.open(whatsappURL, "_blank");
 
