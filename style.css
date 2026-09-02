@@ -2208,3 +2208,49 @@ footer {
         grid-template-columns: 1fr !important;
     }
 }
+/* ===== PREMIUM MOBILE PRODUCT GRID ===== */
+
+@media (max-width: 600px) {
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 0 10px;
+    }
+
+    .product-card {
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .product-photo {
+        height: 150px;
+    }
+
+    .product-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .product-content {
+        padding: 12px 10px;
+    }
+
+    .product-content h3 {
+        font-size: 15px;
+        line-height: 1.25;
+        margin-bottom: 6px;
+    }
+
+    .product-content p {
+        font-size: 12px;
+        line-height: 1.4;
+        margin-bottom: 9px;
+    }
+
+    .product-content a {
+        font-size: 11px;
+        font-weight: 600;
+    }
+}
